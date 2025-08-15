@@ -1,0 +1,28 @@
+{
+  "name": "pw-admin-panel",
+  "version": "1.0.0",
+  "description": "Painel Administrativo para Perfect World Server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "perfect-world",
+    "admin",
+    "panel",
+    "nodejs"
+  ],
+  "author": "Admin",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mysql2": "^3.14.3",
+    "socket.io": "^4.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

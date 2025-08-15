@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect World - Painel Administrativo</title>
+    <link rel="stylesheet" href="style.css?v=20250814001">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <i class="fas fa-dragon"></i>
+                <h2>PW Admin</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="active" data-tab="dashboard">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </li>
+                <li data-tab="players">
+                    <i class="fas fa-users"></i>
+                    <span>Jogadores</span>
+                </li>
+                <li data-tab="items">
+                    <i class="fas fa-gift"></i>
+                    <span>Itens</span>
+                </li>
+                <li data-tab="teleport">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Teleporte</span>
+                </li>
+                <li data-tab="titles">
+                    <i class="fas fa-crown"></i>
+                    <span>Títulos</span>
+                </li>
+                <li data-tab="vip">
+                    <i class="fas fa-star"></i>
+                    <span>VIP</span>
+                </li>
+                <li data-tab="objects">
+                    <i class="fas fa-cube"></i>
+                    <span>Criar Npc</span>
+                </li>
+                <li data-tab="chat">
+                    <i class="fas fa-comments"></i>
+                    <span>Chat</span>
+                </li>
+                <li data-tab="accounts">
+                    <i class="fas fa-user-plus"></i>
+                    <span>Contas</span>
+                </li>
+                <li data-tab="playerinfo">
+                    <i class="fas fa-user-circle"></i>
+                    <span>Info Personagem</span>
+                </li>
+                <li data-tab="moderation">
+                    <i class="fas fa-gavel"></i>
+                    <span>Moderação</span>
+                </li>
+                <li data-tab="onlineplayers">
+                    <i class="fas fa-users-cog"></i>
+                    <span>Jogadores Online</span>
+                </li>
+                <li data-tab="server">
+                    <i class="fas fa-server"></i>
+                    <span>Servidor</span>
+                </li>
+                <li data-tab="events">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Eventos</span>
+                </li>
+                <li data-tab="admin">
+                    <i class="fas fa-cog"></i>
+                    <span>Admin</span>
+                </li>
+                <li data-tab="logs">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Logs</span>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-left">
+                    <h1 class="page-title">Dashboard</h1>
+                    <p class="page-subtitle">Painel de controle do servidor Perfect World</p>
+                </div>
+                <div class="header-right">
+                    <div class="server-status online">
+                        <i class="fas fa-circle"></i>
+                        <span>Servidor Online</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Tab -->
+            <div class="tab-content active" id="dashboard">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Jogadores Online</h3>
+                            <p class="stat-number">127</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Uptime</h3>
+                            <p class="stat-number">24h 15m</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Gold Total</h3>
+                            <p class="stat-number">1.2M</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-money-bill"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Moedas (KKs)</h3>
+                            <p class="stat-number">850K</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Moedas de Prata</h3>
+                            <p class="stat-number">420K</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Itens Criados</h3>
+                            <p class="stat-number">456</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-ghost"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Alma Total</h3>
+                            <p class="stat-number">32K</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quick-actions">
+                    <h3>Ações Rápidas</h3>
+                    <div class="action-buttons">
+                        <button class="btn btn-primary" onclick="showTab('players')">
+                            <i class="fas fa-user-plus"></i>
+                            Gerenciar Jogadores
+                        </button>
+                        <button class="btn btn-secondary" onclick="showTab('items')">
+                            <i class="fas fa-gift"></i>
+                            Dar Itens
+                        </button>
+                        <button class="btn btn-success" onclick="showTab('players')">
+                            <i class="fas fa-money-bill"></i>
+                            Moedas (KKs)
+                        </button>
+                        <button class="btn btn-info" onclick="showTab('teleport')">
+                            <i class="fas fa-location-arrow"></i>
+                            Teleportar
+                        </button>
+                        <button class="btn btn-warning" onclick="showTab('chat')">
+                            <i class="fas fa-comments"></i>
+                            Chat Sistema
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Players Tab -->
+            <div class="tab-content" id="players">
+                <div class="panels-grid">
+                    <div class="panel">
+                        <h3><i class="fas fa-coins"></i> Dar Gold Cash</h3>
+                        <form class="form" id="goldForm">
+                            <div class="form-group">
+                                <label for="goldPlayerId">ID do Jogador:</label>
+                                <input type="number" id="goldPlayerId" name="playerId" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="goldAmount">Quantidade de Gold:</label>
+                                <input type="number" id="goldAmount" name="amount" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-coins"></i>
+                                Enviar Gold
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="panel">
+                        <h3><i class="fas fa-ghost"></i> Dar Alma</h3>
+                        <form class="form" id="soulForm">
+                            <div class="form-group">
+                                <label for="soulPlayerId">ID do Jogador:</label>
+                                <input type="number" id="soulPlayerId" name="playerId" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="soulAmount">Quantidade de Alma:</label>
+                                <input type="number" id="soulAmount" name="amount" required>
+                            </div>
+                            <button type="submit" class="btn btn-secondary">
+                                <i class="fas fa-ghost"></i>
+                                Enviar Alma
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="panel">
+                        <h3><i class="fas fa-coins"></i> Dar Moedas (KKs)</h3>
+                        <form class="form" id="moneyForm">
+                            <div class="form-group">
+                                <label for="moneyPlayerId">ID do Jogador:</label>
+                                <input type="number" id="moneyPlayerId" name="playerId" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="moneyAmount">Quantidade de Moedas:</label>
+                                <input type="number" id="moneyAmount" name="amount" required>
+                            </div>
+                            <button type="submit" class="btn btn-success">
+                                <i class="fas fa-coins"></i>
+                                Enviar Moedas
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="panel">
+                        <h3><i class="fas fa-minus-circle"></i> Remover Moedas (KKs)</h3>
+                        <form class="form" id="spendMoneyForm">
+                            <div class="form-group">
+                                <label for="spendMoneyPlayerId">ID do Jogador:</label>
+                                <input type="number" id="spendMoneyPlayerId" name="playerId" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="spendMoneyAmount">Quantidade:</label>
+                                <input type="number" id="spendMoneyAmount" name="amount" required>
+                            </div>
+                            <button type="submit" class="btn btn-warning">
+                                <i class="fas fa-minus-circle"></i>
+                                Remover Moedas
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="panel">
+                        <h3><i class="fas fa-medal"></i> Dar Moedas de Prata</h3>
+                        <form class="form" id="silverForm">
+                            <div class="form-group">
+                                <label for="silverPlayerId">ID do Jogador:</label>
+                                <input type="number" id="silverPlayerId" name="playerId" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="silverAmount">Quantidade de Prata:</label>
+                                <input type="number" id="silverAmount" name="amount" required>
+                            </div>
+                            <button type="submit" class="btn btn-secondary">
+                                <i class="fas fa-medal"></i>
+                                Enviar Prata
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="panel">
+                        <h3><i class="fas fa-minus-circle"></i> Remover Moedas de Prata</h3>
+                        <form class="form" id="spendSilverForm">
+                            <div class="form-group">
+                                <label for="spendSilverPlayerId">ID do Jogador:</label>
+                                <input type="number" id="spendSilverPlayerId" name="playerId" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="spendSilverAmount">Quantidade:</label>
+                                <input type="number" id="spendSilverAmount" name="amount" required>
+                            </div>
+                            <button type="submit" class="btn btn-warning">
+                                <i class="fas fa-minus-circle"></i>
+                                Remover Prata
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="panel">
+                        <h3><i class="fas fa-minus-circle"></i> Remover Gold Cash</h3>
+                        <form class="form" id="removeGoldForm">
+                            <div class="form-group">
+                                <label for="removeGoldPlayerId">ID do Jogador:</label>
+                                <input type="number" id="removeGoldPlayerId" name="playerId" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="removeGoldAmount">Quantidade:</label>
+                                <input type="number" id="removeGoldAmount" name="amount" required>
+                            </div>
+                            <button type="submit" class="btn btn-warning">
+                                <i class="fas fa-minus-circle"></i>
+                                Remover Gold
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="panel">
+                        <h3><i class="fas fa-sign-out-alt"></i> Desconectar Jogador</h3>
+                        <form class="form" id="disconnectForm">
+                            <div class="form-group">
+                                <label for="disconnectPlayerId">ID do Jogador:</label>
+                                <input type="number" id="disconnectPlayerId" name="playerId" required>
+                            </div>
+                            <button type="submit" class="btn btn-danger">
+                                <i class="fas fa-sign-out-alt"></i>
+                                Desconectar
+                            </button>
+                        </form>
+                    </div>
+                    <div class="panel">
+                        <h3><i class="fas fa-scroll"></i> Entregar Missão</h3>
+                        <form class="form" id="taskForm">
+                            <div class="form-group">
+                                <label for="taskPlayerId">ID do Jogador:</label>
+                                <input type="number" id="taskPlayerId" name="playerId" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="taskId">ID da Missão:</label>
+                                <input type="number" id="taskId" name="taskId" required>
+                            </div>
+                            <button type="submit" class="btn btn-info">
+                                <i class="fas fa-scroll"></i>
+                                Entregar Missão
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Items Tab -->
+            <div class="tab-content" id="items">
+                <div class="panel">
+                    <h3><i class="fas fa-gift"></i> Dar Item</h3>
+                    <form class="form" id="itemForm">
+                        <div class="form-group">
+                            <label for="itemPlayerId">ID do Jogador:</label>
+                            <input type="number" id="itemPlayerId" name="playerId" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="itemId">ID do Item:</label>
+                            <input type="number" id="itemId" name="itemId" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="itemQuantity">Quantidade:</label>
+                            <input type="number" id="itemQuantity" name="quantity" value="1" required>
+                        </div>
+                        <button type="submit" class="btn btn-success">
+                            <i class="fas fa-gift"></i>
+                            Dar Item
+                        </button>
+                    </form>
+                </div>
+
+                <div class="panel">
+                    <h3><i class="fas fa-list"></i> Itens Populares</h3>
+                    <div class="item-list">
+                        <div class="item-preset" data-id="11215">
+                            <i class="fas fa-coins"></i>
+                            <span>Gold (11215)</span>
+                            <button class="btn-small btn-primary" onclick="setItem(11215)">Usar</button>
+                        </div>
+                        <div class="item-preset" data-id="1234">
+                            <i class="fas fa-sword"></i>
+                            <span>Espada Exemplo (1234)</span>
+                            <button class="btn-small btn-primary" onclick="setItem(1234)">Usar</button>
+                        </div>
+                        <div class="item-preset" data-id="5678">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Escudo Exemplo (5678)</span>
+                            <button class="btn-small btn-primary" onclick="setItem(5678)">Usar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Teleport Tab -->
+            <div class="tab-content" id="teleport">
+                <div class="panel">
+                    <h3><i class="fas fa-map-marker-alt"></i> Teleportar Jogador</h3>
+                    <form class="form" id="teleportForm">
+                        <div class="form-group">
+                            <label for="teleportPlayerId">ID do Jogador:</label>
+                            <input type="number" id="teleportPlayerId" name="playerId" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="zone">Mapa:</label>
+                                <input type="number" id="zone" name="zone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="x">Coordenada X:</label>
+                                <input type="number" id="x" name="x" required step="any">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="y">Coordenada Y:</label>
+                                <input type="number" id="y" name="y" required step="any">
+                            </div>
+                            <div class="form-group">
+                                <label for="z">Coordenada Z:</label>
+                                <input type="number" id="z" name="z" required step="any">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-info">
+                            <i class="fas fa-location-arrow"></i>
+                            Teleportar
+                        </button>
+                    </form>
+                </div>
+
+                <div class="panel">
+                    <h3><i class="fas fa-map"></i> Locais Populares</h3>
+                    <div class="location-presets">
+                        <button class="btn btn-small btn-secondary" onclick="setLocation(1, 1286.563, 219.618, 853.975)">
+                            <i class="fas fa-home"></i> Cidade do Dragão [Lado Sul]
+                        </button>
+                        <button class="btn btn-small btn-secondary" onclick="setLocation(1, -1480.625, 253.053, 966.215)">
+                            <i class="fas fa-dungeon"></i> Cidade das Feras
+                        </button>
+                        <button class="btn btn-small btn-secondary" onclick="setLocation(1, -2697.524, 379.020, 3090.316)">
+                            <i class="fas fa-mountain"></i> Cidade Universal
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Titles Tab -->
+            <div class="tab-content" id="titles">
+                <div class="panels-grid">
+                    <div class="panel">
+                        <h3><i class="fas fa-crown"></i> Dar Título</h3>
+                        <form class="form" id="titleForm">
+                            <div class="form-group">
+                                <label for="titlePlayerId">ID do Jogador:</label>
+                                <input type="number" id="titlePlayerId" name="playerId" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="titleId">ID do Título:</label>
+                                <input type="number" id="titleId" name="titleId" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="titleTime">Duração (em horas):</label>
+                                <input type="number" id="titleTime" name="time" value="0" required>
+                                <small>0 = permanente</small>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-crown"></i>
+                                Dar Título
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="panel">
+                        <h3><i class="fas fa-times-circle"></i> Remover Título</h3>
+                        <form class="form" id="removeTitleForm">
+                            <div class="form-group">
+                                <label for="removeTitlePlayerId">ID do Jogador:</label>
+                                <input type="number" id="removeTitlePlayerId" name="playerId" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="removeTitleId">ID do Título:</label>
+                                <input type="number" id="removeTitleId" name="titleId" required>
+                            </div>
+                            <button type="submit" class="btn btn-danger">
+                                <i class="fas fa-times-circle"></i>
+                                Remover Título
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIP Tab -->
+            <div class="tab-content" id="vip">
+                <div class="panel">
+                    <h3><i class="fas fa-star"></i> Adicionar VIP</h3>
+                    <form class="form" id="vipForm">
+                        <div class="form-group">
+                            <label for="vipPlayerId">ID do Jogador:</label>
+                            <input type="number" id="vipPlayerId" name="playerId" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="vipDays">Dias de VIP:</label>
+                            <input type="number" id="vipDays" name="days" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-star"></i>
+                            Adicionar VIP
+                        </button>
+                    </form>
+                </div>
+
+                <div class="panel">
+                    <h3><i class="fas fa-clipboard-list"></i> Pacotes VIP</h3>
+                    <div class="vip-packages">
+                        <button class="btn btn-small btn-info" onclick="setVipDays(7)">
+                            <i class="fas fa-calendar-week"></i> 7 Dias
+                        </button>
+                        <button class="btn btn-small btn-info" onclick="setVipDays(30)">
+                            <i class="fas fa-calendar-alt"></i> 30 Dias
+                        </button>
+                        <button class="btn btn-small btn-info" onclick="setVipDays(90)">
+                            <i class="fas fa-calendar"></i> 90 Dias
+                        </button>
+                        <button class="btn btn-small btn-info" onclick="setVipDays(365)">
+                            <i class="fas fa-infinity"></i> 1 Ano
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Objects Tab -->
+            <div class="tab-content" id="objects">
+                <div class="panels-grid">
+                    <div class="panel">
+                        <h3><i class="fas fa-cube"></i> Criar NPCs</h3>
+                        <form class="form" id="objectForm">
+                            <div class="form-group">
+                                <label for="objectType">Selecione um tipo disponível:</label>
+                                <select id="objectType" name="type" required>
+                                    <option value="0">MOB</option>
+                                    <option value="1">NPC</option>
+                                    <option value="2">MINE</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="objectPlayerId">ID do Jogador:</label>
+                                <input type="number" id="objectPlayerId" name="playerId" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="objectId">ID do Objeto:</label>
+                                <input type="number" id="objectId" name="objectId" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="objectTime">Tempo (segundos):</label>
+                                    <input type="number" id="objectTime" name="time" value="30" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="objectCount">Quantidade:</label>
+                                    <input type="number" id="objectCount" name="count" value="1" required>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-success">
+                                <i class="fas fa-cube"></i>
+                                Criar NPC
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chat Tab -->
+            <div class="tab-content" id="chat">
+                <div class="panel">
+                    <h3><i class="fas fa-comments"></i> Enviar Mensagem</h3>
+                    <form class="form" id="chatForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="chatType">Tipo de Chat:</label>
+                                <select id="chatType" name="type" required>
+                                    <option value="0">CHAT_SINGLE</option>
+                                    <option value="1">CHAT_INSTANCE</option>
+                                    <option value="2">CHAT_WORLD</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="chatPlayerId">ID do Jogador:</label>
+                                <div class="player-id-selector">
+                                    <input type="number" id="chatPlayerId" name="playerId" required placeholder="Digite o ID ou selecione abaixo">
+                                    <button type="button" class="btn btn-sm btn-info" onclick="loadOnlinePlayersForChat()" title="Carregar jogadores online">
+                                        <i class="fas fa-sync-alt"></i>
+                                    </button>
+                                </div>
+                                <div class="online-players-selector" id="chatOnlinePlayersSelector" style="display: none;">
+                                    <div class="online-players-header">
+                                        <span>Jogadores Online:</span>
+                                        <span class="online-count" id="chatOnlineCount">0 jogadores</span>
+                                    </div>
+                                    <div class="player-search-container">
+                                        <input type="text" id="chatPlayerSearch" placeholder="Buscar jogador..." class="player-search-input">
+                                        <div class="player-controls">
+                                            <select id="playersPerPage" class="players-per-page-select">
+                                                <option value="10">10 por página</option>
+                                                <option value="20" selected>20 por página</option>
+                                                <option value="50">50 por página</option>
+                                                <option value="100">100 por página</option>
+                                            </select>
+                                            <button type="button" onclick="closeChatPlayerSelector()" class="btn btn-sm btn-secondary">
+                                                <i class="fas fa-times"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="pagination-info" id="paginationInfo" style="display: none;">
+                                        <span>Página <span id="currentPage">1</span> de <span id="totalPages">1</span></span>
+                                    </div>
+                                    <div class="online-players-list" id="chatOnlinePlayersList">
+                                        <div class="loading-state">
+                                            <i class="fas fa-spinner fa-spin"></i>
+                                            <span>Carregando jogadores...</span>
+                                        </div>
+                                    </div>
+                                    <div class="pagination-controls" id="paginationControls" style="display: none;">
+                                        <button type="button" class="btn btn-sm btn-secondary" id="prevPageBtn" onclick="changePage(-1)">
+                                            <i class="fas fa-chevron-left"></i> Anterior
+                                        </button>
+                                        <div class="page-numbers" id="pageNumbers"></div>
+                                        <button type="button" class="btn btn-sm btn-secondary" id="nextPageBtn" onclick="changePage(1)">
+                                            Próxima <i class="fas fa-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="chatChannel">Canal:</label>
+                            <select id="chatChannel" name="channel" required>
+                                <option value="0">GN_CHAT_CHANNEL_LOCAL</option>
+                                <option value="1">GN_CHAT_CHANNEL_FARCRY</option>
+                                <option value="2">GN_CHAT_CHANNEL_TEAM</option>
+                                <option value="3">GN_CHAT_CHANNEL_FACTION</option>
+                                <option value="4">GN_CHAT_CHANNEL_WHISPER</option>
+                                <option value="5">GN_CHAT_CHANNEL_DAMAGE</option>
+                                <option value="6">GN_CHAT_CHANNEL_FIGHT</option>
+                                <option value="7">GN_CHAT_CHANNEL_TRADE</option>
+                                <option value="8">GN_CHAT_CHANNEL_SYSTEM</option>
+                                <option value="9">GN_CHAT_CHANNEL_BROADCAST</option>
+                                <option value="10">GN_CHAT_CHANNEL_MISC</option>
+                                <option value="11">GN_CHAT_CHANNEL_INSTANCE</option>
+                                <option value="12">GN_CHAT_CHANNEL_SUPERFARCRY</option>
+                                <option value="13">GN_CHAT_CHANNEL_BATTLE</option>
+                                <option value="14">GN_CHAT_CHANNEL_COUNTRY</option>
+                                <option value="15">GN_CHAT_CHANNEL_GLOBAL</option>
+                                <option value="16">GN_CHAT_CHANNEL_ALLIANCE</option>
+                                <option value="17">GN_CHAT_CHANNEL_CENTER</option>
+                                <option value="15">Canal para Avisos da Administração</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="chatMessage">Mensagem:</label>
+                            <textarea id="chatMessage" name="message" rows="3" required placeholder="Digite sua mensagem..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Accounts Tab -->
+            <div class="tab-content" id="accounts">
+                <div class="panels-grid">
+                    <div class="panel">
+                        <h3><i class="fas fa-user-plus"></i> Criar Nova Conta</h3>
+                        <form class="form" id="createAccountForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="username">Nome de Usuário:</label>
+                                    <input type="text" id="username" name="username" required maxlength="32">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Senha:</label>
+                                    <div class="password-group">
+                                        <input type="text" id="password" name="password" required maxlength="64">
+                                        <button type="button" class="btn btn-secondary btn-sm" id="generatePassword">
+                                            <i class="fas fa-dice"></i> Gerar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email" maxlength="64">
+                                </div>
+                                <div class="form-group">
+                                    <label for="truename">Nome Real:</label>
+                                    <input type="text" id="truename" name="truename" maxlength="32">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="gender">Gênero:</label>
+                                    <select id="gender" name="gender">
+                                        <option value="0">Não informado</option>
+                                        <option value="1">Masculino</option>
+                                        <option value="2">Feminino</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="initialGold">Ouro Inicial:</label>
+                                    <input type="number" id="initialGold" name="initialGold" min="0" max="999999" placeholder="0">
+                                    <small class="form-text">Será multiplicado por 100 no jogo</small>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-user-plus"></i>
+                                Criar Conta
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="panel">
+                        <h3><i class="fas fa-database"></i> Status do Banco</h3>
+                        <div class="db-status" id="dbStatus">
+                            <div class="status-item">
+                                <i class="fas fa-circle loading"></i>
+                                <span>Verificando conexão...</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-info" onclick="checkDbStatus()">
+                            <i class="fas fa-refresh"></i>
+                            Verificar Conexão
+                        </button>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <h3><i class="fas fa-list"></i> Contas Recentes</h3>
+                    <div class="accounts-container">
+                        <div class="accounts-controls">
+                            <button class="btn btn-secondary" onclick="loadAccounts()">
+                                <i class="fas fa-refresh"></i>
+                                Carregar Contas
+                            </button>
+                            <div class="search-group">
+                                <input type="text" id="accountSearch" placeholder="Buscar por nome, email ou ID..." class="search-input">
+                                <button class="btn btn-info btn-sm" onclick="clearSearch()">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="search-stats" id="searchStats" style="display: none;">
+                            <span id="searchResultsCount"></span>
+                        </div>
+                        <div class="accounts-list" id="accountsList">
+                            <!-- Lista de contas será carregada aqui -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal para editar conta -->
+            <div class="modal" id="editAccountModal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3><i class="fas fa-edit"></i> Editar Conta</h3>
+                        <span class="close" onclick="closeEditModal()">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form" id="editAccountForm">
+                            <input type="hidden" id="editAccountId">
+                            <div class="form-group">
+                                <label for="editUsername">Nome de Usuário:</label>
+                                <input type="text" id="editUsername" readonly>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="editEmail">Email:</label>
+                                    <input type="email" id="editEmail" name="email" maxlength="64">
+                                </div>
+                                <div class="form-group">
+                                    <label for="editTruename">Nome Real:</label>
+                                    <input type="text" id="editTruename" name="truename" maxlength="32">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="editGender">Gênero:</label>
+                                    <select id="editGender" name="gender">
+                                        <option value="0">Não informado</option>
+                                        <option value="1">Masculino</option>
+                                        <option value="2">Feminino</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="editNewPassword">Nova Senha (opcional):</label>
+                                    <div class="password-group">
+                                        <input type="text" id="editNewPassword" name="newPassword" maxlength="64" placeholder="Deixe em branco para manter">
+                                        <button type="button" class="btn btn-secondary btn-sm" id="generateEditPassword">
+                                            <i class="fas fa-dice"></i> Gerar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-actions">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-save"></i>
+                                    Salvar Alterações
+                                </button>
+                                <button type="button" class="btn btn-danger" onclick="deleteAccount()">
+                                    <i class="fas fa-trash"></i>
+                                    Deletar Conta
+                                </button>
+                                <button type="button" class="btn btn-secondary" onclick="closeEditModal()">
+                                    Cancelar
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Player Info Tab -->
+            <div class="tab-content" id="playerinfo">
+                <div class="panel">
+                    <h3><i class="fas fa-search"></i> Consultar Informações do Personagem</h3>
+                    <form class="form" id="playerInfoForm">
+                        <div class="form-group">
+                            <label for="playerInfoRoleId">ID do Personagem:</label>
+                            <input type="number" id="playerInfoRoleId" name="roleId" required>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-primary" onclick="getRoleBase()">
+                                <i class="fas fa-user"></i>
+                                Dados Base
+                            </button>
+                            <button type="button" class="btn btn-info" onclick="getRoleStatus()">
+                                <i class="fas fa-chart-line"></i>
+                                Status
+                            </button>
+                            <button type="button" class="btn btn-secondary" onclick="getRoleData()">
+                                <i class="fas fa-database"></i>
+                                Dados Completos
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <div class="player-info-results" id="playerInfoResults" style="display: none;">
+                        <h4>Resultado da Consulta:</h4>
+                        <div class="info-display" id="infoDisplay"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Moderation Tab -->
+            <div class="tab-content" id="moderation">
+                <div class="panels-grid">
+                    <div class="panel">
+                        <h3><i class="fas fa-ban"></i> Banir Conta</h3>
+                        <form class="form" id="banAccountForm">
+                            <div class="form-group">
+                                <label for="banUserId">ID do Usuário:</label>
+                                <input type="number" id="banUserId" name="userid" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="banTime">Tempo (em segundos):</label>
+                                <input type="number" id="banTime" name="time" required>
+                                <small class="form-text">3600 = 1 hora, 86400 = 1 dia</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="banReason">Motivo:</label>
+                                <input type="text" id="banReason" name="reason" required maxlength="100">
+                            </div>
+                            <button type="submit" class="btn btn-danger">
+                                <i class="fas fa-ban"></i>
+                                Banir Conta
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="panel">
+                        <h3><i class="fas fa-user-times"></i> Banir Personagem</h3>
+                        <form class="form" id="banCharacterForm">
+                            <div class="form-group">
+                                <label for="banRoleId">ID do Personagem:</label>
+                                <input type="number" id="banRoleId" name="roleid" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="banCharTime">Tempo (em segundos):</label>
+                                <input type="number" id="banCharTime" name="time" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="banCharReason">Motivo:</label>
+                                <input type="text" id="banCharReason" name="reason" required maxlength="100">
+                            </div>
+                            <button type="submit" class="btn btn-danger">
+                                <i class="fas fa-user-times"></i>
+                                Banir Personagem
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="panel">
+                        <h3><i class="fas fa-volume-mute"></i> Mutar Conta</h3>
+                        <form class="form" id="muteAccountForm">
+                            <div class="form-group">
+                                <label for="muteUserId">ID do Usuário:</label>
+                                <input type="number" id="muteUserId" name="userid" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="muteTime">Tempo (em segundos):</label>
+                                <input type="number" id="muteTime" name="time" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="muteReason">Motivo:</label>
+                                <input type="text" id="muteReason" name="reason" required maxlength="100">
+                            </div>
+                            <button type="submit" class="btn btn-warning">
+                                <i class="fas fa-volume-mute"></i>
+                                Mutar Conta
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="panel">
+                        <h3><i class="fas fa-comment-slash"></i> Mutar Personagem</h3>
+                        <form class="form" id="muteCharacterForm">
+                            <div class="form-group">
+                                <label for="muteRoleId">ID do Personagem:</label>
+                                <input type="number" id="muteRoleId" name="roleid" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="muteCharTime">Tempo (em segundos):</label>
+                                <input type="number" id="muteCharTime" name="time" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="muteCharReason">Motivo:</label>
+                                <input type="text" id="muteCharReason" name="reason" required maxlength="100">
+                            </div>
+                            <button type="submit" class="btn btn-warning">
+                                <i class="fas fa-comment-slash"></i>
+                                Mutar Personagem
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Online Players Tab -->
+            <div class="tab-content" id="onlineplayers">
+                <div class="panel">
+                    <div class="section-header">
+                        <h3><i class="fas fa-users"></i> Jogadores Online em Tempo Real</h3>
+                        <div class="section-controls">
+                            <button class="btn btn-info" onclick="loadOnlinePlayers()">
+                                <i class="fas fa-sync-alt"></i> Atualizar Lista
+                            </button>
+                            <span class="online-count" id="onlineCount">0 jogadores</span>
+                        </div>
+                    </div>
+                    <div class="online-players-full" id="onlinePlayersFull">
+                        <div class="loading-state">
+                            <i class="fas fa-spinner fa-spin"></i>
+                            <span>Carregando lista completa...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Server Tab -->
+            <div class="tab-content" id="server">
+                <div class="panel">
+                    <h3><i class="fas fa-shield-alt"></i> Controle de Proibições do Servidor</h3>
+                    <form class="form" id="serverForbidForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="forbidItems">Proibir Itens IDs:</label>
+                                <textarea id="forbidItems" name="forbid_item_list" placeholder="1234, 5678, 9012..." rows="3"></textarea>
+                                <small class="form-text">Separe os IDs por vírgula</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="forbidSkills">Proibir Skills IDs:</label>
+                                <textarea id="forbidSkills" name="forbid_skill_list" placeholder="100, 200, 300..." rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="forbidTasks">Proibir Missões IDs:</label>
+                                <textarea id="forbidTasks" name="forbid_task_list" placeholder="50, 75, 100..." rows="3"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="forbidRecipes">Proibir Recipes IDs:</label>
+                                <textarea id="forbidRecipes" name="forbid_recipe_list" placeholder="10, 20, 30..." rows="3"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-danger">
+                            <i class="fas fa-shield-alt"></i>
+                            Aplicar Proibições
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="panel">
+                    <h3><i class="fas fa-info-circle"></i> Status do Servidor</h3>
+                    <div class="server-status" id="serverStatus">
+                        <button class="btn btn-info" onclick="loadServerStatus()">
+                            <i class="fas fa-sync-alt"></i>
+                            Verificar Status
+                        </button>
+                        <div class="status-display" id="statusDisplay" style="margin-top: 15px;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Events Tab -->
+            <div class="tab-content" id="events">
+                <div class="events-header">
+                    <h2><i class="fas fa-calendar-alt"></i> Criador de Eventos</h2>
+                    <p>Crie eventos automatizados para seu servidor Perfect World</p>
+                </div>
+
+                <div class="events-main">
+                    <!-- Templates Section -->
+                    <div class="events-section">
+                        <div class="panel">
+                            <h3><i class="fas fa-magic"></i> Templates de Eventos</h3>
+                            <p class="section-description">Escolha um template pronto ou crie do zero</p>
+                            
+                            <div class="templates-grid">
+                                <div class="template-card" onclick="loadEventTemplate('welcome')">
+                                    <div class="template-icon">🎁</div>
+                                    <h4>Boas-vindas</h4>
+                                    <p>Receber novos jogadores com itens e mensagens</p>
+                                    <div class="template-tags">
+                                        <span class="tag">Login</span>
+                                        <span class="tag">Items</span>
+                                    </div>
+                                </div>
+
+                                <div class="template-card" onclick="loadEventTemplate('hourly_reward')">
+                                    <div class="template-icon">⏰</div>
+                                    <h4>Recompensa Horária</h4>
+                                    <p>Dar bônus para jogadores online a cada hora</p>
+                                    <div class="template-tags">
+                                        <span class="tag">Timer</span>
+                                        <span class="tag">Reward</span>
+                                    </div>
+                                </div>
+
+                                <div class="template-card" onclick="loadEventTemplate('level_reward')">
+                                    <div class="template-icon">🏆</div>
+                                    <h4>Recompensa por Level</h4>
+                                    <p>Recompensar jogadores quando subirem de level</p>
+                                    <div class="template-tags">
+                                        <span class="tag">Level</span>
+                                        <span class="tag">Auto</span>
+                                    </div>
+                                </div>
+
+                                <div class="template-card" onclick="loadEventTemplate('boss_event')">
+                                    <div class="template-icon">👹</div>
+                                    <h4>Evento de Boss</h4>
+                                    <p>Spawnar bosses especiais periodicamente</p>
+                                    <div class="template-tags">
+                                        <span class="tag">Boss</span>
+                                        <span class="tag">PvP</span>
+                                    </div>
+                                </div>
+
+                                <div class="template-card" onclick="loadEventTemplate('custom')">
+                                    <div class="template-icon">⚙️</div>
+                                    <h4>Evento Personalizado</h4>
+                                    <p>Criar um evento completamente do zero</p>
+                                    <div class="template-tags">
+                                        <span class="tag">Custom</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Event Builder Section -->
+                    <div class="events-section" id="eventBuilderSection" style="display: none;">
+                        <div class="panel">
+                            <div class="event-builder-header">
+                                <h3><i class="fas fa-cogs"></i> <span id="eventBuilderTitle">Configurar Evento</span></h3>
+                                <button type="button" class="btn btn-secondary" onclick="closeEventBuilder()">
+                                    <i class="fas fa-times"></i> Cancelar
+                                </button>
+                            </div>
+
+                            <div class="event-builder-content">
+                                <!-- Step Navigation -->
+                                <div class="event-steps">
+                                    <div class="step active" data-step="1">
+                                        <span class="step-number">1</span>
+                                        <span class="step-title">Timer</span>
+                                    </div>
+                                    <div class="step" data-step="2">
+                                        <span class="step-number">2</span>
+                                        <span class="step-title">Ações</span>
+                                    </div>
+                                    <div class="step" data-step="3">
+                                        <span class="step-number">3</span>
+                                        <span class="step-title">Resumo</span>
+                                    </div>
+                                </div>
+
+                                <!-- Step Content -->
+                                <div class="step-content" id="stepContent">
+                                    <!-- Content will be loaded dynamically -->
+                                </div>
+
+                                <!-- Navigation Buttons -->
+                                <div class="step-navigation">
+                                    <button type="button" class="btn btn-secondary" id="prevStepBtn" onclick="previousStep()" disabled>
+                                        <i class="fas fa-chevron-left"></i> Anterior
+                                    </button>
+                                    <button type="button" class="btn btn-primary" id="nextStepBtn" onclick="nextStep()">
+                                        Próximo <i class="fas fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Active Events Section -->
+                    <div class="events-section">
+                        <div class="panel">
+                            <h3><i class="fas fa-play-circle"></i> Eventos Ativos</h3>
+                            <div class="active-events-list" id="activeEventsList">
+                                <div class="no-events-message">
+                                    <i class="fas fa-calendar-times"></i>
+                                    <p>Nenhum evento ativo no momento</p>
+                                    <small>Crie um evento usando os templates acima</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Admin Tab -->
+            <div class="tab-content" id="admin">
+                <div class="panels-grid">
+                    <div class="panel">
+                        <h3><i class="fas fa-skull"></i> Matar Jogador</h3>
+                        <form class="form" id="killForm">
+                            <div class="form-group">
+                                <label for="killPlayerId">ID do Jogador (vítima):</label>
+                                <input type="number" id="killPlayerId" name="playerId" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="killTargetId">ID do Atacante:</label>
+                                <input type="number" id="killTargetId" name="targetId" required>
+                            </div>
+                            <button type="submit" class="btn btn-danger">
+                                <i class="fas fa-skull"></i>
+                                Matar Jogador
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="panel">
+                        <h3><i class="fas fa-toggle-on"></i> Gerenciar Triggers</h3>
+                        <form class="form" id="triggerForm">
+                            <div class="form-group">
+                                <label for="triggerId">ID do Trigger:</label>
+                                <input type="number" id="triggerId" name="triggerId" required>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-success" onclick="activateTrigger()">
+                                    <i class="fas fa-toggle-on"></i>
+                                    Ativar
+                                </button>
+                                <button type="button" class="btn btn-warning" onclick="deactivateTrigger()">
+                                    <i class="fas fa-toggle-off"></i>
+                                    Desativar
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Logs Tab -->
+            <div class="tab-content" id="logs">
+                <div class="panel">
+                    <h3><i class="fas fa-file-alt"></i> Log de Atividades</h3>
+                    <div class="log-container" id="logContainer">
+                        <div class="log-entry success">
+                            <span class="log-time">13:45:32</span>
+                            <span class="log-message">Gold enviado para jogador 1028</span>
+                        </div>
+                        <div class="log-entry info">
+                            <span class="log-time">13:44:15</span>
+                            <span class="log-message">Alma enviada para jogador 1028</span>
+                        </div>
+                        <div class="log-entry warning">
+                            <span class="log-time">13:43:01</span>
+                            <span class="log-message">Tentativa de conexão falhada</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Notification System -->
+    <div class="notification-container" id="notificationContainer"></div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js?v=20250814001"></script>
+</body>
+</html>

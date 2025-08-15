@@ -1,0 +1,28 @@
+{
+  "name": "nexapi-pw",
+  "version": "1.0.0",
+  "description": "API para gerenciamento de servidor Perfect World",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "perfect-world",
+    "game-server",
+    "api",
+    "admin-panel"
+  ],
+  "author": "Felipe Salles",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "body-parser": "^1.20.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
